@@ -11,7 +11,7 @@
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=colin.simon@mailbox.tu-dresden.de
 #SBATCH --output=output-convert-to-hf-%j.out
-#SBATCH --error=output-convert-to-hf-%j.out
+#SBATCH --error=error-convert-to-hf-%j.out
 
 module --force purge
 module load modenv/hiera  GCC/11.3.0  OpenMPI/4.1.4 PyTorch/1.12.0-CUDA-11.7.0
