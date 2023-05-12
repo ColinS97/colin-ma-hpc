@@ -1,10 +1,10 @@
 #!/bin/bash
 
 #SBATCH --no-requeue
-#SBATCH --partition=gpu2
+#SBATCH --partition=alpha
 #SBATCH --nodes=1
 #SBATCH --gres=gpu:1
-#SBATCH --mem=16000
+#SBATCH --mem=8000
 #SBATCH --mincpus=1
 #SBATCH --time=03:00:00
 #SBATCH --job-name=run-dsp-server
