@@ -13,6 +13,8 @@
 #SBATCH --output=output-run-dsp-server-%j.out
 #SBATCH --error=error-run-dsp-server-%j.out
 
+model=$1
+
 module --force purge
 module load modenv/hiera  GCC/11.3.0  OpenMPI/4.1.4 PyTorch/1.12.0-CUDA-11.7.0
 
@@ -22,4 +24,4 @@ pip install transformers accelerate sentencepiece uvicorn fastapi git+https://gi
 
 /home/cosi765e/colin-ma-scratch/tools/ngrok http 4242 --log=stdout > ngrok.log &
 
-python -m dsp.modules.hf_server --port 4242 --model "google/flan-t5-base"
+python -m dsp.modules.hf_server --port 4242 --model "$model"
