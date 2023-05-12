@@ -29,5 +29,5 @@ pip install transformers accelerate sentencepiece
 #    --input_dir /home/cosi765e/colin-ma-scratch/models/llama --model_size 13B --output_dir /home/cosi765e/colin-ma-scratch/models/hf-llama/13B
 
 python /home/cosi765e/transformers/src/transformers/models/llama/convert_llama_weights_to_hf.py \
-    --input_dir /home/cosi765e/colin-ma-scratch/models/llama --model_size 30B --output_dir /home/cosi765e/colin-ma-scratch/models/hf-llama/7B
+    --input_dir /home/cosi765e/colin-ma-scratch/models/llama --model_size 30B --output_dir /home/cosi765e/colin-ma-scratch/models/hf-llama/30B
 
