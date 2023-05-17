@@ -13,6 +13,11 @@
 #SBATCH --output=output-run-dsp-server-%j.out
 #SBATCH --error=error-run-dsp-server-%j.out
 
+if [ "$#" -ne 1 ]
+then
+    echo "Please specify a model name as argument. e.g. h2oai/h2ogpt-oig-oasst1-512-6.9b or h2oai/h2ogpt-oig-oasst1-512-6.9b"
+    exit 1
+fi
 model=$1
 
 module --force purge
