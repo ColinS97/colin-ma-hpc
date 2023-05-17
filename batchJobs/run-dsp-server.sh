@@ -10,8 +10,7 @@
 #SBATCH --job-name=run-dsp-server
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=colin.simon@mailbox.tu-dresden.de
-#SBATCH --output=output-run-dsp-server-%j.out
-#SBATCH --error=error-run-dsp-server-%j.out
+#SBATCH --output=output-run-dsp-server.out
 
 if [ "$#" -ne 1 ]
 then
