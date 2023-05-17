@@ -23,5 +23,6 @@ module load modenv/hiera  GCC/11.3.0  OpenMPI/4.1.4 PyTorch/1.12.0-CUDA-11.7.0
 pip install transformers accelerate sentencepiece uvicorn fastapi 
 pip install --no-cache-dir git+https://github.com/ColinS97/dsp
 /scratch/ws/0/cosi765e-colin-ma-scratch/tools/ngrok http 4242 --log=stdout > ngrok.log &
+grep -Eoh 'https://.*\.ngrok-free\.app' ngrok.log
 
 python -m dsp.modules.hf_server --port 4242 --model "$model"
