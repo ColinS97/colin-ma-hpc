@@ -20,7 +20,7 @@ pip install transformers accelerate sentencepiece uvicorn fastapi fschat
 
 nohup python3 -m fastchat.serve.controller &
 
-nohup python3 -m fastchat.serve.model_worker --model-name 'vicuna-13b-v1.1' --model-path /home/cosi765e/colin-ma-scratch/models/vicuna/13B --load-8bit --cpu-offloading &
+nohup python3 -m fastchat.serve.model_worker --model-name 'vicuna-13b-v1.1' --model-path /scratch/ws/0/cosi765e-colin-ma-scratch/models/vicuna/13B --load-8bit --cpu-offloading &
 
 /scratch/ws/0/cosi765e-colin-ma-scratch/tools/ngrok http 8000 --log=stdout > ngrok.log &
 NGROK_URL=$(grep -Eoh 'https://.*\.ngrok-free\.app' ngrok.log)
