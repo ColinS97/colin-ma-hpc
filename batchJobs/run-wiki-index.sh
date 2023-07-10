@@ -10,7 +10,7 @@
 #SBATCH --job-name=run-wiki-index-%j
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=colin.simon@mailbox.tu-dresden.de
-#SBATCH --output=output-run-dsp-server.out
+#SBATCH --output=output-run-wiki-index-%j.out
 
 
 module --force purge
