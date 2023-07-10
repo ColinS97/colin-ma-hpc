@@ -20,4 +20,4 @@ module load modenv/hiera  GCC/11.3.0  OpenMPI/4.1.4 PyTorch/1.12.0-CUDA-11.7.0
 
 pip install transformers chromadb
 
-python index_wikipedia.py
+python index_wikipedia.py "$1" "$2"
