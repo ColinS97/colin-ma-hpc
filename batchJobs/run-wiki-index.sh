@@ -7,7 +7,7 @@
 #SBATCH --mem=8000
 #SBATCH --mincpus=1
 #SBATCH --time=24:00:00
-#SBATCH --job-name=run-dsp-server
+#SBATCH --job-name=run-wiki-index-%j
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=colin.simon@mailbox.tu-dresden.de
 #SBATCH --output=output-run-dsp-server.out
