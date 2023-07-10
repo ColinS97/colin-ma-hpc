@@ -15,7 +15,7 @@
 
 
 module --force purge
-module load modenv/hiera  modenv/scs5 CUDA/11.8.0
+module load modenv/hiera  modenv/scs5 CUDA/11.8.0 GCCcore/11.3.0 Python/3.10.4
 
 virtualenv /lustre/ssd/ws/cosi765e-colin-ma-ssd/llama-cpp-venv/pyenv
 source "/lustre/ssd/ws/cosi765e-colin-ma-ssd/llama-cpp-venv/pyenv/bin/activate"
