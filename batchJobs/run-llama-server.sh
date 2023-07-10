@@ -24,6 +24,7 @@ source "/lustre/ssd/ws/cosi765e-colin-ma-ssd/llama-cpp-venv/pyenv/bin/activate"
 python -m pip install --upgrade pip
 
 CMAKE_ARGS="-DLLAMA_CUBLAS=on" FORCE_CMAKE=1 pip install llama-cpp-python
-pip install uvicorn anyio starlette
 
-python -m llama_cpp.server --model "/lustre/ssd/ws/cosi765e-colin-ma-ssd/vicuna-13b-v1.3.0.ggmlv3.q8_0.bin" --n_gpu_layers 80 --n_threads 1
+pip install uvicorn anyio starlette fastapi pydantic-settings sse-starlette
+
+python -m llama_cpp.server --model "/lustre/ssd/ws/cosi765e-colin-ma-ssd/vicuna-13b-v1.3.0.ggmlv3.q6_K.bin" --n_gpu_layers 80 --n_threads 1
