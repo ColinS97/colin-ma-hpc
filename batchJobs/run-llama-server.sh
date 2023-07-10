@@ -27,4 +27,4 @@ CMAKE_ARGS="-DLLAMA_CUBLAS=on" FORCE_CMAKE=1 pip install llama-cpp-python
 
 pip install uvicorn anyio starlette fastapi pydantic-settings sse-starlette
 
-python -m llama_cpp.server --model "/lustre/ssd/ws/cosi765e-colin-ma-ssd/vicuna-13b-v1.3.0.ggmlv3.q6_K.bin" --n_gpu_layers 80 --n_threads 1
+python -m llama_cpp.server --model "/lustre/ssd/ws/cosi765e-colin-ma-ssd/vicuna-13b-v1.3.0.ggmlv3.q5_K_M.bin" --n_gpu_layers 80 --n_threads 1
