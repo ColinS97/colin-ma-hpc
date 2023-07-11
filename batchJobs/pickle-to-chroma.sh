@@ -5,11 +5,11 @@
 #SBATCH --nodes=1
 #SBATCH --mem=16000
 #SBATCH --mincpus=1
-#SBATCH --time=04:00:00
-#SBATCH --job-name=run-llama-server-%j
+#SBATCH --time=24:00:00
+#SBATCH --job-name=run-pickle-%j
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=colin.simon@mailbox.tu-dresden.de
-#SBATCH --output=output-run-llama-server-%j.out
+#SBATCH --output=output-pickle-%j.out
 # shellcheck source=/dev/null
 
 
