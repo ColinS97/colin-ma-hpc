@@ -4,8 +4,8 @@
 #SBATCH --partition=haswell64
 #SBATCH --nodes=1
 #SBATCH --mem=16000
-#SBATCH --mincpus=1
-#SBATCH --time=24:00:00
+#SBATCH --mincpus=8
+#SBATCH --time=48:00:00
 #SBATCH --job-name=run-pickle-%j
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=colin.simon@mailbox.tu-dresden.de
