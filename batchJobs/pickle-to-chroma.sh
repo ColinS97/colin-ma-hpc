@@ -22,7 +22,7 @@ source "/lustre/ssd/ws/cosi765e-colin-ma-ssd/chroma-env/pyenv/bin/activate"
 
 python -m pip install --upgrade pip
 
-pip install chrmadb
+pip install chromadb tqdm
 
 python pickle_to_chroma.py
 
